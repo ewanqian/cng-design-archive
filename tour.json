@@ -1,0 +1,385 @@
+{
+  "version": 1,
+  "title": "中国国家地理酒店 · 设计档案",
+  "stations": [
+    {
+      "id": "hall",
+      "title": "一楼大堂",
+      "subtitle": "从这里认识整个空间",
+      "floor": 1,
+      "line": "A",
+      "clip": "clip_01",
+      "position": [
+        105,
+        160
+      ],
+      "description": "酒店大堂，以空间影像记录入口、陈设与公共动线。",
+      "views": [
+        {
+          "id": "hall-1",
+          "image": "assets/hall-1.jpg",
+          "preview": "assets/hall-1-preview.jpg",
+          "thumbnail": "assets/hall-1-thumb.jpg",
+          "timeSeconds": 40.4,
+          "yaw": 0,
+          "pitch": 0,
+          "assemblyPosition": [
+            -5.357831,
+            0.082427,
+            1.269658
+          ]
+        },
+        {
+          "id": "hall-2",
+          "image": "assets/hall-2.jpg",
+          "preview": "assets/hall-2-preview.jpg",
+          "thumbnail": "assets/hall-2-thumb.jpg",
+          "timeSeconds": 140.0,
+          "yaw": 0,
+          "pitch": 0,
+          "assemblyPosition": [
+            -11.563556,
+            -0.117511,
+            3.424301
+          ]
+        },
+        {
+          "id": "hall-3",
+          "image": "assets/hall-3.jpg",
+          "preview": "assets/hall-3-preview.jpg",
+          "thumbnail": "assets/hall-3-thumb.jpg",
+          "timeSeconds": 260.4,
+          "yaw": 0,
+          "pitch": 0,
+          "assemblyPosition": [
+            -7.845509,
+            0.067419,
+            -1.647684
+          ]
+        }
+      ],
+      "thumbnail": "assets/hall-1-thumb.jpg",
+      "access": "public",
+      "detail": "酒店大堂，以空间影像记录入口、陈设与公共动线。"
+    },
+    {
+      "id": "magazine",
+      "title": "杂志回廊",
+      "subtitle": "大堂与楼梯的公共连接区",
+      "floor": 1,
+      "line": "A",
+      "clip": "clip_01",
+      "position": [
+        310,
+        160
+      ],
+      "description": "以杂志为媒介的公共回廊，连接阅读、展示与楼梯空间。",
+      "views": [
+        {
+          "id": "magazine-1",
+          "image": "assets/magazine-1.jpg",
+          "preview": "assets/magazine-1-preview.jpg",
+          "thumbnail": "assets/magazine-1-thumb.jpg",
+          "timeSeconds": 390.0,
+          "yaw": 0,
+          "pitch": 0,
+          "assemblyPosition": [
+            5.017422,
+            -0.025099,
+            1.265646
+          ]
+        },
+        {
+          "id": "magazine-2",
+          "image": "assets/magazine-2.jpg",
+          "preview": "assets/magazine-2-preview.jpg",
+          "thumbnail": "assets/magazine-2-thumb.jpg",
+          "timeSeconds": 420.4,
+          "yaw": 0,
+          "pitch": 0,
+          "assemblyPosition": [
+            8.031505,
+            0.020929,
+            2.650695
+          ]
+        },
+        {
+          "id": "magazine-3",
+          "image": "assets/magazine-3.jpg",
+          "preview": "assets/magazine-3-preview.jpg",
+          "thumbnail": "assets/magazine-3-thumb.jpg",
+          "timeSeconds": 445.0,
+          "yaw": 0,
+          "pitch": 0,
+          "assemblyPosition": [
+            5.80279,
+            -0.304852,
+            1.691962
+          ]
+        }
+      ],
+      "thumbnail": "assets/magazine-1-thumb.jpg",
+      "access": "public",
+      "detail": "以杂志为媒介的公共回廊，连接阅读、展示与楼梯空间。"
+    },
+    {
+      "id": "life",
+      "title": "生命奇观",
+      "subtitle": "一楼体验区域",
+      "floor": 1,
+      "line": "A",
+      "clip": "clip_06",
+      "position": [
+        510,
+        160
+      ],
+      "description": "以《生命奇观》为主题的惊喜盒子，呈现自然探索体验。",
+      "views": [],
+      "thumbnail": "assets/exhibit.svg",
+      "access": "internal",
+      "detail": "以《生命奇观》为主题的惊喜盒子，呈现自然探索体验。"
+    },
+    {
+      "id": "stairs",
+      "title": "楼梯平台",
+      "subtitle": "二楼公共区域",
+      "floor": 2,
+      "line": "B",
+      "clip": "clip_04",
+      "position": [
+        95,
+        150
+      ],
+      "description": "杂志镜面旋转楼梯，以连续的杂志陈列连接上下两层公共空间。",
+      "views": [
+        {
+          "id": "stairs-1",
+          "image": "assets/stairs-1.jpg",
+          "preview": "assets/stairs-1-preview.jpg",
+          "thumbnail": "assets/stairs-1-thumb.jpg",
+          "timeSeconds": 179.6,
+          "yaw": 0,
+          "pitch": 0,
+          "annotations": [
+            {
+              "id": "landmark-magazine-stair",
+              "type": "info",
+              "pitch": 0,
+              "yaw": 0,
+              "text": "杂志墙与公共楼梯"
+            }
+          ],
+          "assemblyPosition": [
+            8.654742,
+            1.654656,
+            1.588852
+          ]
+        },
+        {
+          "id": "stairs-2",
+          "image": "assets/stairs-2.jpg",
+          "preview": "assets/stairs-2-preview.jpg",
+          "thumbnail": "assets/stairs-2-thumb.jpg",
+          "timeSeconds": 200.0,
+          "yaw": 0,
+          "pitch": 0,
+          "assemblyPosition": [
+            8.654742,
+            1.654656,
+            1.588852
+          ]
+        },
+        {
+          "id": "stairs-3",
+          "image": "assets/stairs-3.jpg",
+          "preview": "assets/stairs-3-preview.jpg",
+          "thumbnail": "assets/stairs-3-thumb.jpg",
+          "timeSeconds": 220.0,
+          "yaw": 0,
+          "pitch": 0,
+          "assemblyPosition": [
+            8.654742,
+            1.654656,
+            1.588852
+          ]
+        }
+      ],
+      "thumbnail": "assets/stairs-1-thumb.jpg",
+      "access": "public",
+      "detail": "杂志镜面旋转楼梯，以连续的杂志陈列连接上下两层公共空间。"
+    },
+    {
+      "id": "foyer",
+      "title": "公共门厅",
+      "subtitle": "二楼的浏览换乘点",
+      "floor": 2,
+      "line": "B",
+      "clip": "clip_04",
+      "position": [
+        250,
+        150
+      ],
+      "description": "二楼公共门厅，连接楼梯平台与展览入口。",
+      "views": [
+        {
+          "id": "foyer-1",
+          "image": "assets/foyer-1.jpg",
+          "preview": "assets/foyer-1-preview.jpg",
+          "thumbnail": "assets/foyer-1-thumb.jpg",
+          "timeSeconds": 55.0,
+          "yaw": 0,
+          "pitch": 0,
+          "assemblyPosition": [
+            3.91452,
+            1.624532,
+            0.196945
+          ]
+        },
+        {
+          "id": "foyer-2",
+          "image": "assets/foyer-2.jpg",
+          "preview": "assets/foyer-2-preview.jpg",
+          "thumbnail": "assets/foyer-2-thumb.jpg",
+          "timeSeconds": 74.6,
+          "yaw": 0,
+          "pitch": 0,
+          "assemblyPosition": [
+            5.486627,
+            1.670474,
+            4.155356
+          ]
+        },
+        {
+          "id": "foyer-3",
+          "image": "assets/foyer-3.jpg",
+          "preview": "assets/foyer-3-preview.jpg",
+          "thumbnail": "assets/foyer-3-thumb.jpg",
+          "timeSeconds": 95.4,
+          "yaw": 0,
+          "pitch": 0,
+          "assemblyPosition": [
+            6.249862,
+            1.619508,
+            5.087484
+          ]
+        }
+      ],
+      "thumbnail": "assets/foyer-1-thumb.jpg",
+      "access": "public",
+      "detail": "二楼公共门厅，连接楼梯平台与展览入口。"
+    },
+    {
+      "id": "gallery-entry",
+      "title": "光影馆入口",
+      "subtitle": "入口与红色门厅",
+      "floor": 2,
+      "line": "B",
+      "clip": "clip_03",
+      "position": [
+        410,
+        150
+      ],
+      "description": "光影馆的入口与过渡空间。",
+      "views": [],
+      "thumbnail": "assets/exhibit.svg",
+      "access": "internal",
+      "detail": "光影馆的入口与过渡空间。"
+    },
+    {
+      "id": "gallery",
+      "title": "光影展厅",
+      "subtitle": "光影馆内部",
+      "floor": 2,
+      "line": "B",
+      "clip": "clip_02",
+      "position": [
+        570,
+        150
+      ],
+      "description": "以《生命奇观》为主题的光影展览，结合影像与空间营造沉浸体验。",
+      "views": [],
+      "thumbnail": "assets/exhibit.svg",
+      "access": "internal",
+      "detail": "以《生命奇观》为主题的光影展览，结合影像与空间营造沉浸体验。"
+    },
+    {
+      "id": "experience",
+      "title": "其他体验区",
+      "subtitle": "二楼支线",
+      "floor": 2,
+      "line": "C",
+      "clip": "clip_05",
+      "position": [
+        410,
+        295
+      ],
+      "description": "互动体验区域，记录展项与空间之间的关系。",
+      "views": [],
+      "thumbnail": "assets/exhibit.svg",
+      "access": "internal",
+      "detail": "互动体验区域，记录展项与空间之间的关系。"
+    }
+  ],
+  "connections": [
+    {
+      "from": "hall",
+      "to": "magazine",
+      "floor": 1,
+      "kind": "browsing",
+      "line": "A"
+    },
+    {
+      "from": "magazine",
+      "to": "life",
+      "floor": 1,
+      "kind": "inferred",
+      "line": "A"
+    },
+    {
+      "from": "stairs",
+      "to": "foyer",
+      "floor": 2,
+      "kind": "browsing",
+      "line": "B"
+    },
+    {
+      "from": "foyer",
+      "to": "gallery-entry",
+      "floor": 2,
+      "kind": "shared_area",
+      "line": "B"
+    },
+    {
+      "from": "gallery-entry",
+      "to": "gallery",
+      "floor": 2,
+      "kind": "inferred",
+      "line": "B"
+    },
+    {
+      "from": "foyer",
+      "to": "experience",
+      "floor": 2,
+      "kind": "inferred",
+      "line": "C"
+    }
+  ],
+  "mapDisclaimer": "区域浏览示意，不按飞行轨迹绘制，不代表比例、墙体边界或实际通行路线。虚线为待确认连接。",
+  "modelStatus": {
+    "mesh": {
+      "url": "models/lobby.glb",
+      "faces": 97986,
+      "vertices": 49084,
+      "coverage": "small_lobby_sample",
+      "acceptedWholeBuilding": false
+    },
+    "gaussian": "pending",
+    "lowpoly": "concept_only"
+  },
+  "defaultStation": "hall",
+  "assembly": {
+    "file": "docs/assembly.json",
+    "units": "relative_unknown_scale",
+    "source": "CNG_space_assembly2.blend"
+  }
+}

@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><meta name="theme-color" content="#faf9f7"><meta name="description" content="以区域为站点，浏览一楼与二楼的实拍全景。"><title>中国国家地理酒店 · 设计档案</title><link rel="stylesheet" href="vendor/pannellum.css"><link rel="stylesheet" href="style.css"><link rel="stylesheet" href="theme.css"></head>
+<body>
+<main id="mapScreen">
+ <header class="header"><a class="wordmark" href="#" aria-label="返回区域导览">CNG<span>设计档案</span></a><span class="archive">DESIGN ARCHIVE</span><button class="quiet" id="exportNotes">导出标注 <span aria-hidden="true">↗</span></button></header>
+ <section class="intro"><div><p class="eyebrow"><span class="liveDot"></span> 空间记录 · 数字保存</p><h1>中国国家地理酒店<br>设计查看器</h1><p class="lead">以影像保存空间，以展项连接内容。</p></div><div class="introMeta"><strong id="areaCount">8</strong><span>个区域<br>两层空间 · 设计记录</span></div></section>
+ <section class="workspace" aria-label="区域导览">
+  <div class="mapPanel">
+   <div class="mapTop"><div class="floorTabs" role="group" aria-label="选择楼层"><button id="floor1" class="active" aria-pressed="true">1F <span>一楼</span></button><button id="floor2" aria-pressed="false">2F <span>二楼</span></button></div><span class="mapType">区域线路图 <span> / SCHEMATIC</span></span></div>
+   <div class="mapCanvas"><div class="ghostFloor" id="ghostFloor" aria-hidden="true">01</div><svg id="metroMap" viewBox="0 0 660 370" role="group" aria-label="一楼区域线路图"></svg></div>
+   <div class="mapBottom"><span><i class="solidLegend"></i> 浏览关联</span><span><i class="dashLegend"></i> 连接待确认</span><button id="transferFloor" class="transferButton">查看二楼 <span aria-hidden="true">↑</span></button></div>
+  </div>
+  <aside class="stationCard" aria-label="所选区域"><div class="stationImage"><img id="stationPreview" alt="一楼大堂实拍预览"><span class="imageBadge">360° 实拍</span></div><div class="stationBody"><div class="stationKicker"><span id="stationCode">A01</span><span id="stationFloor">一楼 / 1F</span></div><h2 id="stationTitle">一楼大堂</h2><p id="stationDescription"></p><button id="exhibitInfo" class="textButton detailButton">展项介绍 ↗</button><div class="stationFoot"><span id="viewCount"></span><button id="enterTour" class="primary">进入全景 <span aria-hidden="true">↗</span></button></div></div></aside>
+ </section>
+ <p class="mapDisclaimer">区域关系示意；虚线连接待核实。</p>
+ <section class="stationSection"><div class="sectionTop"><h2>空间与展项</h2><span>项目档案 / ARCHIVE</span></div><div id="stationList" class="stationList"></div></section>
+ <section class="archiveAbout"><div><h2>关于项目</h2><p>中国国家地理酒店与 MAGZONE 立体杂志空间，将地理内容融入旅居、展览与互动体验。本档案由设计团队整理，用于空间记录、项目介绍与交流。</p></div><div><h2>了解与到访</h2><a href="https://www.dili360.com/article/p69a14500b934b40.htm" target="_blank" rel="noopener">MAGZONE 项目介绍 ↗</a><a href="https://www.dili360.com/" target="_blank" rel="noopener">中国国家地理官网 ↗</a><p>开放与预约信息以官方渠道为准。</p></div></section><p class="rights">品牌、空间设计及展项内容版权归中国国家地理与相关权利人所有。档案仅用于展示与交流；内部展览影像不公开，未经许可不得商用或复制设计。</p><footer><span>中国国家地理酒店 · 设计档案</span><span>设计团队空间归档</span><button class="textButton" id="aboutModels">三维档案</button></footer>
+</main>
+
+<section id="tourScreen" class="tourScreen hidden" aria-label="全景漫游">
+ <div id="panorama"></div><div class="topShade"></div><div class="bottomShade"></div>
+ <div class="tourHeader"><button class="glass" id="backToMap">← <span>区域导览</span></button><div class="tourBrand">CNG <span>360°</span></div><button class="glass iconButton" id="shareView" aria-label="复制当前视点链接">↗</button></div>
+ <div class="tourInfo"><p class="eyebrow" id="tourLocation"></p><h2 id="tourTitle"></h2><p id="tourSubtitle"></p></div>
+ <div class="viewTools"><button class="glass iconButton" id="zoomIn" aria-label="放大">＋</button><button class="glass iconButton" id="zoomOut" aria-label="缩小">−</button><button class="glass" id="markView">＋ 标记</button><button class="glass iconButton" id="fullScreen" aria-label="全屏">⛶</button></div>
+ <div id="reticle" class="reticle hidden" aria-hidden="true"><i></i><b></b></div>
+ <div class="tourBottom"><div class="viewsHeading"><span>在这个区域换个视点</span><span id="viewNumber"></span></div><div id="viewStrip" class="viewStrip"></div><div class="tourNavigation"><button id="previousStation" class="glass">← 上一区域</button><span class="tourHint">拖动画面，环顾四周</span><button id="nextStation" class="glass">下一区域 →</button></div></div>
+ <div id="annotationPanel" class="annotationPanel hidden" role="dialog" aria-modal="true" aria-labelledby="annotationTitle"><div class="dialogHeader"><h3 id="annotationTitle">标记这个方向</h3><button id="closeAnnotation" class="textButton" aria-label="关闭标注">×</button></div><p>把画面中心对准要标记的位置，再填写名称。</p><label for="annotationText">地点或说明</label><input id="annotationText" maxlength="80" placeholder="例如：杂志墙、楼梯、展厅入口"><button id="saveAnnotation" class="primary">保存标记</button><small>保存在当前浏览器，可从导览页导出。</small></div>
+</section>
+<dialog id="modelDialog"><div class="dialogHeader"><h2>三维档案</h2><button id="closeModels" class="textButton" aria-label="关闭">×</button></div><p><b class="mint">全景影像</b> · 公共区域实景记录。</p><p id="meshStatus"><b>计算验证中</b> · 深度重建 Mesh，先看局部样片，再扩展整层。</p><div id="meshSlot"></div><p class="muted">当前收录大堂局部模型。</p></dialog>
+<dialog id="exhibitDialog"><div class="dialogHeader"><h2 id="exhibitTitle"></h2><button id="closeExhibit" class="textButton" aria-label="关闭展项介绍">×</button></div><p id="exhibitBody"></p><a href="https://www.dili360.com/article/p69a14500b934b40.htm" target="_blank" rel="noopener">查看官方项目介绍 ↗</a></dialog><div id="toast" class="toast" role="status" aria-live="polite"></div>
+<script src="vendor/pannellum.js"></script><script src="app.js"></script></body></html>
