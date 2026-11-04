@@ -1,0 +1,54 @@
+name: Publish public CNG spatial archive
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: cng-pages
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - name: Audit public archive payload
+        shell: bash
+        run: |
+          test -s index.html
+          test -s tour.json
+          test -s app.js
+          test -s assets/hall-1.jpg
+          test -s vendor/pannellum.js
+          test -s models/lobby.glb
+          node - <<'NODE'
+          const fs = require('fs')
+          const data = JSON.parse(fs.readFileSync('tour.json', 'utf8'))
+          const stations = data.stations || []
+          const views = stations.flatMap(station => (station.views || []).map(view => ({ station, view })))
+          for (const { station, view } of views) {
+            if (station.access !== 'public') throw new Error('Non-public viewpoint in static archive: ' + station.id)
+            for (const field of ['image', 'preview', 'thumbnail']) {
+              const asset = view[field]
+              if (!asset || !fs.existsSync(asset)) throw new Error('Missing viewpoint file ' + asset)
+            }
+          }
+          console.log('stations=' + stations.length + ', public panorama views=' + views.length)
+          NODE
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: .
+      - id: deployment
+        uses: actions/deploy-pages@v4
